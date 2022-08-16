@@ -18,7 +18,8 @@
     </head>
     <body>
         {{-- 原本這邊有HTML內容，但都刪掉了 --}}
-        
+        <div id="app"></div>
+
         {{-- 新增的 --}}
         <script src="/js/app.js"></script>
     </body>
