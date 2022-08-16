@@ -11,7 +11,15 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);
+/* 【原先】 */
+// mix.js('resources/js/app.js', 'public/js')
+//     .postCss('resources/css/app.css', 'public/css', [
+//         //
+//     ]);
+
+
+
+/* 所有前端應用的配置，讀取 resources的檔案，最後在做build的時候會將內容都放置到 public資料夾中。 */
+/* 【New】 */
+mix.js("resources/js/app.js", "js") 
+    .sass("resources/sass/app.scss", "css")
